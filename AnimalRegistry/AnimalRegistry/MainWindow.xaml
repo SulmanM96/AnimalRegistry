@@ -1,0 +1,58 @@
+﻿<Window x:Class="AnimalRegistry.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AnimalRegistry"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="82*"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Header="Conservation Status" FontSize="18" HorizontalAlignment="Left" Height="27" Margin="24,226.8,0,0" VerticalAlignment="Top" Width="560" Grid.Row="1"/>
+        <Label FontSize="18" Content="Animal Name" HorizontalAlignment="Left" Margin="28,75,0,0" VerticalAlignment="Top" Width="129" Grid.RowSpan="2"/>
+        <TextBox x:Name="animalText" HorizontalAlignment="Left" Height="23" Margin="179,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261" Text="e.g Lion" Grid.RowSpan="2"/>
+        <Label FontSize="18" Content="Class" HorizontalAlignment="Left" Margin="28,117.8,0,0" VerticalAlignment="Top" Width="107" Grid.Row="1"/>
+        <ComboBox x:Name="aclass" HorizontalAlignment="Left" Margin="179,128.8,0,0" VerticalAlignment="Top" Width="261" Grid.Row="1">
+            <ComboBoxItem Content="Mammals"/>
+            <ComboBoxItem Content="Brids"/>
+            <ComboBoxItem Content="Fish"/>
+            <ComboBoxItem Content="Reptiles"/>
+            <ComboBoxItem Content="Amphibans"/>
+            <ComboBoxItem Content="Arthropods"/>
+        </ComboBox>
+        <Image x:Name="imagecanvas" HorizontalAlignment="Left" Height="190" Margin="516,10.8,0,0" VerticalAlignment="Top" Width="233" Grid.Row="1"/>
+        <Label FontSize="18" Content="Population" HorizontalAlignment="Left" Margin="28,167.8,0,0" VerticalAlignment="Top" Width="107" Grid.Row="1"/>
+        <TextBox x:Name="popbox" HorizontalAlignment="Left" Height="23" Margin="179,177.8,0,0" TextWrapping="Wrap" Text="e.g 1087" VerticalAlignment="Top" Width="261" Grid.Row="1"/>
+        <Label FontSize="18" Content="Picture" HorizontalAlignment="Left" Margin="516,80,0,0" VerticalAlignment="Top" Width="107" Grid.RowSpan="2"/>
+        <RadioButton x:Name="danger" Content="Endangered" HorizontalAlignment="Left" Margin="204,231.8,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_1" Grid.Row="1"/>
+        <RadioButton x:Name="vul" Content="Vulnerable" HorizontalAlignment="Left" Margin="414,231.8,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" Grid.Row="1"/>
+        <RadioButton x:Name="Near" Content="Near Extinction" HorizontalAlignment="Left" Margin="300,231.8,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_2" Grid.Row="1"/>
+        <RadioButton x:Name="least" Content="Least Concern" HorizontalAlignment="Left" Margin="504,231.8,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_3" Grid.Row="1"/>
+        <Button Content="View Profile" HorizontalAlignment="Left" Margin="183,284.8,0,0" VerticalAlignment="Top" Width="116" Height="35" Click="Button_Click1" Grid.Row="1"/>
+        <Button Content="Submit" HorizontalAlignment="Left" Margin="324,284.8,0,0" VerticalAlignment="Top" Width="116" Height="35" Click="Button_Click" Grid.Row="1"/>
+        <Button x:Name="imagebutton" Content="Select Image" HorizontalAlignment="Left" Margin="623,88,0,0" VerticalAlignment="Top" Width="130" Height="21" Click="Imagebutton_Click" Grid.RowSpan="2"/>
+        <Label FontSize="18" Content="Kingdom" HorizontalAlignment="Left" Margin="28,20.8,0,0" VerticalAlignment="Top" Width="129" Grid.Row="1"/>
+        <ComboBox x:Name="Kingdom" HorizontalAlignment="Left" Margin="179,30.8,0,0" VerticalAlignment="Top" Width="261" Grid.Row="1">
+            <ComboBoxItem Content="North America"/>
+            <ComboBoxItem Content="South America"/>
+            <ComboBoxItem Content="Africa"/>
+            <ComboBoxItem Content="Europe"/>
+            <ComboBoxItem Content="Asia"/>
+            <ComboBoxItem Content="Austrilia Oceania"/>
+        </ComboBox>
+        <GroupBox Header="" HorizontalAlignment="Left" Height="75" Margin="632,244.8,0,0" VerticalAlignment="Top" Width="133" Grid.Row="1"/>
+        <Label FontSize="18" Content="Food Type" HorizontalAlignment="Left" Margin="632,213.8,0,0" VerticalAlignment="Top" Width="142" Grid.Row="1"/>
+        <CheckBox x:Name="Carni"  Content="Carnivore" HorizontalAlignment="Left" Margin="645,252.8,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Grid.Row="1"/>
+        <CheckBox x:Name="Herbi" Content="Herbivore" HorizontalAlignment="Left" Margin="645,294.8,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked_2" Grid.Row="1"/>
+        <CheckBox x:Name="Omni" Content="Omnivore" HorizontalAlignment="Left" Margin="645,272.8,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked_1" Grid.Row="1"/>
+        <Label FontSize="12" Content="Classified as Endangered" HorizontalAlignment="Left" Margin="28,78.8,0,0" VerticalAlignment="Top" Width="151" Grid.Row="1" Height="34"/>
+        <DatePicker x:Name="caetext" HorizontalAlignment="Left" Margin="179,81.8,0,0" VerticalAlignment="Top" Width="261" Height="26" Grid.Row="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="28,28,0,0" TextWrapping="Wrap" Text="Endangered Animals Registry" VerticalAlignment="Top" Width="398" Height="55" FontSize="24"/>
+
+
+    </Grid>
+</Window>
