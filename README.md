@@ -9,5 +9,5 @@ Windows Prompt
 Getting Started
 Open your Visual Studio Basic and navigate to the AnimalRegistry and the click on the Solutions File and then double click on it to run it.
 
-Authors
+Author
 Sulman Malik 
